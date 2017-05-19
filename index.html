@@ -16,6 +16,10 @@
         <!-- Theme CSS -->
         <link rel="stylesheet" href="media/css/main.css" />
 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -53,66 +57,140 @@
         <link rel="icon" href="">
         <link rel="icon" type="image/png" href="">
 
-        <script id="all-standards-template" type="text/template">
-            <% for (var i = 0; i < standards.length; i++) { %>
-                <div><a data-id="<%=standards[i].id%>" class="competency-detail" href="#"><%=standards[i].Competency%></a></div>
+        <script id="lens-template" type="text/template">
+            <% if (lenses.length > 1) { %>
+            <ul class="nav nav-pills" role="tablist">
+                <% for (var i = 0; i < lenses.length; i++) { %>
+                    <li class="nav-item">
+                        <a class="nav-link <% if (activeLens.name === lenses[i].name) { %>active<% } %>"
+                            href="#<%=lenses[i].href%>" data-name="<%=lenses[i].name%>"
+                            role="tab"><%=lenses[i].name%></a>
+                    </li>
+                <% } %>
+            </ul>
+            <hr />
+            <h2 class="text-center">
+                <%= activeLens.name %>
+            </h2>
+            <p class="text-center text-muted">
+                <%= activeLens.description %>
+            </p>
             <% } %>
         </script>
-        <script id="core-standards-template" type="text/template">
-            <% for (var i = 0; i < standards.length; i++) { %>
-                <div class="row">
-                    <div class="col">
-                        <div>Icon</div>
-                        <div><a data-id="<%=standards[i].id%>" class="competency-detail" href="#"><%=standards[i].Competency%></a></div>
+
+        <script id="standards-template" type="text/template">
+            <% for (var i = 0; i < mastery.length; i++) { %>
+                <% if (mastery[i].length > 0) { %>
+                    <% if (i === 0) { %>
+                        <h3 class="level text-center bronze">
+                            Stage 1 Mastery: Remember / Understand
+                        </h3>
+                    <% } else if (i === 1) { %>
+                        <h3 class="level text-center silver">
+                            Stage 2 Mastery: Apply / Analyze
+                        </h3>
+                    <% } else { %>
+                        <h3 class="level text-center gold">
+                            Stage 3 Mastery: Create / Evaluate
+                        </h3>
+                    <% } %>
+                    <div class="grid">
+                    <% for (var j = 0; j < mastery[i].length; j++) { %>
+                        <div class="card text-center grid-item">
+                            <div class="card-block">
+                                <a href="#" class="competency-detail" data-id="<%=mastery[i][j].id%>">
+                                    <% if (i === 0) { %>
+                                        <h4 class="badge badge-framework badge-bronze">
+                                    <% } else if (i === 1) { %>
+                                        <h4 class="badge badge-framework badge-silver">
+                                    <% } else { %>
+                                        <h4 class="badge badge-framework badge-gold">
+                                    <% } %>
+                                    <%=mastery[i][j].Competency_Abbreviation%>
+                                    </h4>
+                                </a>
+                                <p class="card-title">
+                                    <a href="#" class="competency-detail" data-id="<%=mastery[i][j].id%>">
+                                    <%=mastery[i][j].Competency%>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    <% } %>
                     </div>
-                    <div class="col">
-                        <h5>I will be able to:</h5>
-                        <ul>
-                            <% for (var j = 1; j <= 6; j++) { %>
-                                <% var value = standards[i]['End' + j]; %>
-                                <% if (value.length > 0) { %>
-                                    <li><%=value%></li>
-                                <% } %>
-                            <% } %>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>I will develop:</h5>
-                        <ul>
-                            <% for (var j = 1; j <= 6; j++) { %>
-                                <% var value = standards[i]['Dev' + j]; %>
-                                <% if (value.length > 0) { %>
-                                    <li><%=value%></li>
-                                <% } %>
-                            <% } %>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>It should take me:</h5>
-                        <ul>
-                            <% for (var j = 1; j <= 6; j++) { %>
-                                <% var value = standards[i]['Time' + j]; %>
-                                <% if (value.length > 0) { %>
-                                    <li><%=value%></li>
-                                <% } %>
-                            <% } %>
-                        </ul>
-                    </div>
-                </div>
+                <% } %>
             <% } %>
         </script>
+
         <script id="detail-template" type="text/template">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <h3><%=standard.Competency%></h3>
-            <div class="row">
-                <div class="col-8">
-                    <p class="small"><%=standard.Source%>, <%=standard.Type%></p>
-                    <p class="lead"><%=standard.Description_Lede%></p>
-                    <p><%=standard.Description_Body%></p>
+            <div>
+                <% if (activeStandard.Mastery === '1') { %>
+                    <span class="badge badge-framework-inline badge-bronze">
+                <% } else if (activeStandard.Mastery === '2') { %>
+                    <span class="badge badge-framework-inline badge-silver">
+                <% } else { %>
+                    <span class="badge badge-framework-inline badge-gold">
+                <% } %>
+                    <%=activeStandard.Competency_Abbreviation%>
+                </span>
+                <h3><%=activeStandard.Competency%></h3>
+            </div>
+            <% if (activeStandard.Competency_Description) { %>
+                <br />
+                <p><%=activeStandard.Competency_Description%></p>
+            <% } %>
+            <hr />
+            <div class="row badge-summary">
+                <div class="col">
+                    <% if (activeStandard.Mastery === '1') { %>
+                        <p class="badge badge-default badge-bronze"><i class="fa fa-certificate" aria-hidden="true"></i> Stage 1 Mastery: Remember / Understand</p>
+                    <% } else if (activeStandard.Mastery === '2') { %>
+                        <p class="badge badge-default badge-silver"><i class="fa fa-certificate" aria-hidden="true"></i> Stage 2 Mastery: Apply / Analyze</p>
+                    <% } else { %>
+                        <p class="badge badge-default badge-gold"><i class="fa fa-certificate" aria-hidden="true"></i> Stage 3 Mastery: Create / Evaluate</p>
+                    <% } %>
+                    <% if (activeStandard.Lens) { %>
+                        <p class="badge badge-default"><i class="fa fa-search" aria-hidden="true"></i> <%= activeStandard.Lens %></p>
+                    <% } %>
+                    <p class="badge badge-info"><i class="fa fa-book" aria-hidden="true"></i> <%= activeStandard.Source %></p>
+                    <p class="badge badge-info"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= activeStandard.Time1 %></p>
                 </div>
-                <div class="col text-center"><strong>Icon</strong></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>I will be able to:</h5>
+                    <ul>
+                        <% for (var j = 1; j <= 6; j++) { %>
+                            <% var value = activeStandard['End' + j]; %>
+                            <% if (value.length > 0) { %>
+                                <li><%=value%></li>
+                            <% } %>
+                        <% } %>
+                    </ul>
+
+                    <h5>I will develop:</h5>
+                    <ul>
+                        <% for (var j = 1; j <= 6; j++) { %>
+                            <% var value = activeStandard['Dev' + j]; %>
+                            <% if (value.length > 0) { %>
+                                <li><%=value%></li>
+                            <% } %>
+                        <% } %>
+                    </ul>
+
+                    <h5>It should take me:</h5>
+                    <ul>
+                        <% for (var j = 1; j <= 6; j++) { %>
+                            <% var value = activeStandard['Time' + j]; %>
+                            <% if (value.length > 0) { %>
+                                <li><%=value%></li>
+                            <% } %>
+                        <% } %>
+                    </ul>
+                </div>
             </div>
         </script>
     </head>
@@ -121,73 +199,19 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p>
-                        <h1>
-                            CTL Framework for Digital Humanities Competencies
-                        </h1>
-                    </p>
+                    <h1>
+                        CTL Framework for Digital Humanities Competencies
+                    </h1>
                     <p class="lead">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et varius magna, ac fermentum nisl. Cras lacinia nulla augue, elementum facilisis enim mattis at. 
                     </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs nav-justified" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#all" role="tab">All</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#technical" role="tab">Technical</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#administrative" role="tab">Administrative</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#intellectual" role="tab">Intellectual</a>
-                      </li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div class="tab-pane active" id="all" role="tabpanel">
-                        <p>
-                            <h2 class="text-center">All Competencies</h2>
-                        </p>
-                        <p class="lead text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et varius magna, ac fermentum nisl. <br>
-                            Cras lacinia nulla augue, elementum facilisis enim mattis at. 
-                        </p>
-                        <div class="standards-container all"></div>
-                      </div>
-                      <div class="tab-pane" id="technical" role="tabpanel">
-                        <p><h2 class="text-center">Technical Competencies</h2></p>
-                        <p class="lead text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et varius magna, ac fermentum nisl. <br>
-                            Cras lacinia nulla augue, elementum facilisis enim mattis at. 
-                        </p>
-                        <div class="standards-container technical"></div>
-                      </div>
-                      <div class="tab-pane" id="administrative" role="tabpanel">
-                        <p><h2 class="text-center">Administrative Competencies</h2></p>
-                        <p class="lead text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et varius magna, ac fermentum nisl. <br>
-                            Cras lacinia nulla augue, elementum facilisis enim mattis at. 
-                        </p>
-                        <div class="standards-container administrative"></div>
-                      </div>
-                      <div class="tab-pane" id="intellectual" role="tabpanel">
-                        <p><h2 class="text-center">Intellectual Competencies</h2></p>
-                        <p class="lead text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et varius magna, ac fermentum nisl. <br>
-                            Cras lacinia nulla augue, elementum facilisis enim mattis at. 
-                        </p>
-                        <div class="standards-container intellectual"></div>
-                      </div>
-                    </div>
-                </div>
+                <div class="col lens-container"></div>
             </div>
+
+            <div class="standards-container"></div>
         </div>
 
         <div id="competency-detail-modal" class="modal fade">
@@ -207,6 +231,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="media/js/lib/papaparse.min.js"></script>
+        <script src="media/js/lib/masonry.pkgd.min.js"></script>
         <script src="media/js/standards.js"></script>
 
         <script>
@@ -214,9 +239,10 @@
                 var view = new StandardView({
                     el: jQuery('.container'),
                     url: 'media/csv/standards.csv?callback=?',
-                    allTemplate: jQuery('#all-standards-template'),
-                    coreTemplate: jQuery('#core-standards-template'),
-                    detailTemplate: jQuery('#detail-template')
+                    allDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et varius magna, ac fermentum nisl. Cras lacinia nulla augue, elementum facilisis enim mattis at.',
+                    lensTemplate: jQuery('#lens-template'),
+                    standardsTemplate: jQuery('#standards-template'),
+                    detailTemplate: jQuery('#detail-template'),
                 });
             });
         </script>
