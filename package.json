@@ -1,0 +1,10 @@
+{
+    "name": "diglit-dh-badge",
+    "description": "Digital Literacy Digital Humanities Framework",
+    "author": "Lucy Appert, Jessica Brodsky, Susan Dreher",
+    "version": "0.0.1",
+    "devDependencies": {
+        "jshint": "^2.9.2",
+        "jscs": "^3.0.4"
+    }
+}
