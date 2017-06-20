@@ -20,7 +20,7 @@ administrative environment in which they work, as well
 as to the tasks to which they are put?"" (p. 12)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 GIS platforms and spatial data,Y,1,GSD,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Tools for spatial mapping and analysis have been developed within geographical disciplines for professional use but other more popular tools for mapping (like Google Earth) have a lower threshold for use. What are the spatial (and temporal) aspects of the data and how will these data be appropriately marked up for analysis? How will they be displayed within a mapping or GIS system, and what are the research questions that can be tested with such systems? Are the data already “spatial” and, if not, is this process automated or does it involve manual geo-rectification of materials (whether maps, historical photographs, videos, or oral histories)? How will this be done, by whom, and with an eye toward what standards for visualization and sharing within and across geo-browser applications?"" (p. 12)","Your learner goal here. 
-",,,,,,Your activity here.,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Virtual simulation tools,Y,1,VST,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Virtual worlds and three-dimensional modeling are tools for creating immersive environments for historical research and presentation. Again, what tools, software, and systems are being used and for what ends? What standards are being followed and how will various communities of practice engage with the models, simulations, and virtual worlds? Into which existing platforms will the models be placed and what kind of constraints do these platforms have?"" (p. 12)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,,,,,,
 Content management and authoring,Y,1,CMA,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""How will the project manage existing content and support the growth of new content? Who are the authors of this proposed content, and how will they input it? Will they need to be technically savvy or does a browser interface enable their participation? What content management systems are used in the infrastructure or repository? Do the content management systems enable data to be shared across platforms and repositories?"" (p. 12)","Your learner goal here. 
@@ -28,7 +28,7 @@ Content management and authoring,Y,1,CMA,Technical,"""Web development, infrastru
 Interface design as knowledge modeling,Y,1,IDK,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""How is content displayed in the interface and how does a user navigate this content through the interface? What is the interface model and how does it express the knowledge model of the project and support its mission?"" (p. 12)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Game engines,Y,1,GEn,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Game economies have a role to play in scholarly work as well as in entertainment. Understanding the way game engines might be incorporated into a project to support participation is useful in certain circumstances."" (p. 13)","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Design for mobility and diversity,Y,1,DMD,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Does the project have dimensions that will make its
 content available on mobile applications or allow it to
 be repurposed for use in multiple contexts? Will the
@@ -36,7 +36,7 @@ project work on different platforms? Will it work across
 cultural, linguistic, and social divides? Is the project
 ADA compliant, or does it have limitations for use by
 persons with disabilities?"" (p. 13)","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Custom-built vs. off-the-shelf,Y,1,CmB,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Is part of the project’s research the designing and
 building of a platform or tool, and if so, can this work
 be repurposed or generalized from its customized use
@@ -47,7 +47,7 @@ will be a combination of these two approaches, using
 existing APIs, standard content management systems,
 or blogging engines that can be variously customized
 and extended to address the specific needs of a project."" (p. 13) ","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Cross-cultural communication,Y,1,CCC,Intellectual,"""While the most visible intellectual element is usually the content, it is important to recognize that Digital Humanities projects present arguments and knowledge experiments in many different ways, often contributing to the creation of new knowledge through complex interactions, visualizations, data and data structures, and even code. Digital Humanities projects are not just about the content (although this is often primary), but also about the design of multiple levels of knowledge and argument from the operations on the back-end database to the front-end access points of a user interface."" (p. 13)",MIT,"""Has consideration been given to the ways in which the design of the project will work cross-culturally? Is it meant to engage communities whose language and/or cultural orientation will be varied?"" (p. 13)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Generative imagination,Y,1,GIm,Intellectual,"""While the most visible intellectual element is usually the content, it is important to recognize that Digital Humanities projects present arguments and knowledge experiments in many different ways, often contributing to the creation of new knowledge through complex interactions, visualizations, data and data structures, and even code. Digital Humanities projects are not just about the content (although this is often primary), but also about the design of multiple levels of knowledge and argument from the operations on the back-end database to the front-end access points of a user interface."" (p. 13)",MIT,"""Is the project generative and will it continue to create
@@ -92,15 +92,15 @@ administrative environment in which they work, as well
 as to the tasks to which they are put?"" (p. 12)","Your learner goal here. 
 ",Ex. Apply appropriate functions in the command line text utilities to find patterns in a text.,,,,,Your activity here.,Ex. Participating in lecture and discussion of command line text utilities.,,,,,Your time here.,Ex. 1 Week,,,,
 GIS platforms and spatial data,Y,2,GSD,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Tools for spatial mapping and analysis have been developed within geographical disciplines for professional use but other more popular tools for mapping (like Google Earth) have a lower threshold for use. What are the spatial (and temporal) aspects of the data and how will these data be appropriately marked up for analysis? How will they be displayed within a mapping or GIS system, and what are the research questions that can be tested with such systems? Are the data already “spatial” and, if not, is this process automated or does it involve manual geo-rectification of materials (whether maps, historical photographs, videos, or oral histories)? How will this be done, by whom, and with an eye toward what standards for visualization and sharing within and across geo-browser applications?"" (p. 12)","Your learner goal here. 
-",,,,,,Your activity here.,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Virtual simulation tools,Y,2,VST,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Virtual worlds and three-dimensional modeling are tools for creating immersive environments for historical research and presentation. Again, what tools, software, and systems are being used and for what ends? What standards are being followed and how will various communities of practice engage with the models, simulations, and virtual worlds? Into which existing platforms will the models be placed and what kind of constraints do these platforms have?"" (p. 12)","Your learner goal here. 
-",,,,,,Your activity here.,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Content management and authoring,Y,2,CMA,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""How will the project manage existing content and support the growth of new content? Who are the authors of this proposed content, and how will they input it? Will they need to be technically savvy or does a browser interface enable their participation? What content management systems are used in the infrastructure or repository? Do the content management systems enable data to be shared across platforms and repositories?"" (p. 12)","Your learner goal here. 
 ",Ex. Track issues and documenting changes using an appropriate collaborative content management platform.,,,,,Your activity here.,Using a version control system for content management and issue tracking.,,,,,Your time here.,Ex. 12 Weeks,,,,
 Interface design as knowledge modeling,Y,2,IDK,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""How is content displayed in the interface and how does a user navigate this content through the interface? What is the interface model and how does it express the knowledge model of the project and support its mission?"" (p. 12)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Game engines,Y,2,GEn,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Game economies have a role to play in scholarly work as well as in entertainment. Understanding the way game engines might be incorporated into a project to support participation is useful in certain circumstances."" (p. 13)","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Design for mobility and diversity,Y,2,DMD,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Does the project have dimensions that will make its
 content available on mobile applications or allow it to
 be repurposed for use in multiple contexts? Will the
@@ -108,7 +108,7 @@ project work on different platforms? Will it work across
 cultural, linguistic, and social divides? Is the project
 ADA compliant, or does it have limitations for use by
 persons with disabilities?"" (p. 13)","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Custom-built vs. off-the-shelf,Y,2,CmB,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Is part of the project’s research the designing and
 building of a platform or tool, and if so, can this work
 be repurposed or generalized from its customized use
@@ -119,7 +119,7 @@ will be a combination of these two approaches, using
 existing APIs, standard content management systems,
 or blogging engines that can be variously customized
 and extended to address the specific needs of a project."" (p. 13) ","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Cross-cultural communication,Y,2,CCC,Intellectual,"""While the most visible intellectual element is usually the content, it is important to recognize that Digital Humanities projects present arguments and knowledge experiments in many different ways, often contributing to the creation of new knowledge through complex interactions, visualizations, data and data structures, and even code. Digital Humanities projects are not just about the content (although this is often primary), but also about the design of multiple levels of knowledge and argument from the operations on the back-end database to the front-end access points of a user interface."" (p. 13)",MIT,"""Has consideration been given to the ways in which the design of the project will work cross-culturally? Is it meant to engage communities whose language and/or cultural orientation will be varied?"" (p. 13)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Generative imagination,Y,2,GIm,Intellectual,"""While the most visible intellectual element is usually the content, it is important to recognize that Digital Humanities projects present arguments and knowledge experiments in many different ways, often contributing to the creation of new knowledge through complex interactions, visualizations, data and data structures, and even code. Digital Humanities projects are not just about the content (although this is often primary), but also about the design of multiple levels of knowledge and argument from the operations on the back-end database to the front-end access points of a user interface."" (p. 13)",MIT,"""Is the project generative and will it continue to create
@@ -162,15 +162,15 @@ administrative environment in which they work, as well
 as to the tasks to which they are put?"" (p. 12)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 GIS platforms and spatial data,Y,3,GSD,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Tools for spatial mapping and analysis have been developed within geographical disciplines for professional use but other more popular tools for mapping (like Google Earth) have a lower threshold for use. What are the spatial (and temporal) aspects of the data and how will these data be appropriately marked up for analysis? How will they be displayed within a mapping or GIS system, and what are the research questions that can be tested with such systems? Are the data already “spatial” and, if not, is this process automated or does it involve manual geo-rectification of materials (whether maps, historical photographs, videos, or oral histories)? How will this be done, by whom, and with an eye toward what standards for visualization and sharing within and across geo-browser applications?"" (p. 12)","Your learner goal here. 
-",,,,,,Your activity here.,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Virtual simulation tools,Y,3,VST,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Virtual worlds and three-dimensional modeling are tools for creating immersive environments for historical research and presentation. Again, what tools, software, and systems are being used and for what ends? What standards are being followed and how will various communities of practice engage with the models, simulations, and virtual worlds? Into which existing platforms will the models be placed and what kind of constraints do these platforms have?"" (p. 12)","Your learner goal here. 
-",,,,,,Your activity here.,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Content management and authoring,Y,3,CMA,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""How will the project manage existing content and support the growth of new content? Who are the authors of this proposed content, and how will they input it? Will they need to be technically savvy or does a browser interface enable their participation? What content management systems are used in the infrastructure or repository? Do the content management systems enable data to be shared across platforms and repositories?"" (p. 12)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Interface design as knowledge modeling,Y,3,IDK,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""How is content displayed in the interface and how does a user navigate this content through the interface? What is the interface model and how does it express the knowledge model of the project and support its mission?"" (p. 12)","Your learner goal here. 
 ",Ex. Design an interface with appropriate features for a digital edition of the text.,,,,,Your activity here.,Ex. Developing user stories and feature requests for digital edition. Configuring digital edition interface to address user stories and feature requests.,,,,,Your time here.,Ex. 5 Weeks,,,,
 Game engines,Y,3,GEn,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Game economies have a role to play in scholarly work as well as in entertainment. Understanding the way game engines might be incorporated into a project to support participation is useful in certain circumstances."" (p. 13)","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Design for mobility and diversity,Y,3,DMD,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Does the project have dimensions that will make its
 content available on mobile applications or allow it to
 be repurposed for use in multiple contexts? Will the
@@ -178,7 +178,7 @@ project work on different platforms? Will it work across
 cultural, linguistic, and social divides? Is the project
 ADA compliant, or does it have limitations for use by
 persons with disabilities?"" (p. 13)","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Custom-built vs. off-the-shelf,Y,3,CmB,Technical,"""Web development, infrastructure, server environment, interface design; choices about tools, platforms, software, and hardware."" (p. 12)",MIT,"""Is part of the project’s research the designing and
 building of a platform or tool, and if so, can this work
 be repurposed or generalized from its customized use
@@ -189,7 +189,7 @@ will be a combination of these two approaches, using
 existing APIs, standard content management systems,
 or blogging engines that can be variously customized
 and extended to address the specific needs of a project."" (p. 13) ","Your learner goal here. 
-",,,,,,,,,,,,,,,,,
+",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Cross-cultural communication,Y,3,CCC,Intellectual,"""While the most visible intellectual element is usually the content, it is important to recognize that Digital Humanities projects present arguments and knowledge experiments in many different ways, often contributing to the creation of new knowledge through complex interactions, visualizations, data and data structures, and even code. Digital Humanities projects are not just about the content (although this is often primary), but also about the design of multiple levels of knowledge and argument from the operations on the back-end database to the front-end access points of a user interface."" (p. 13)",MIT,"""Has consideration been given to the ways in which the design of the project will work cross-culturally? Is it meant to engage communities whose language and/or cultural orientation will be varied?"" (p. 13)","Your learner goal here. 
 ",,,,,,Your activity here.,,,,,,Your time here.,,,,,
 Generative imagination,Y,3,GIm,Intellectual,"""While the most visible intellectual element is usually the content, it is important to recognize that Digital Humanities projects present arguments and knowledge experiments in many different ways, often contributing to the creation of new knowledge through complex interactions, visualizations, data and data structures, and even code. Digital Humanities projects are not just about the content (although this is often primary), but also about the design of multiple levels of knowledge and argument from the operations on the back-end database to the front-end access points of a user interface."" (p. 13)",MIT,"""Is the project generative and will it continue to create
