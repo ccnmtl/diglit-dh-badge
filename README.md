@@ -57,7 +57,7 @@ Repositories for other frameworks:
 
 ![Screenshot of menu to download Google Sheet as .csv](media/images/Download_As_CSV_Google_Sheet.png)
 
-6.  Go to the “csv” folder inside the “images” folder in your repository. Drag the file “standards.csv” into the “csv” folder. It should replace the existing “standards.csv” file.
+6.  Go to the “csv” folder inside the “media” folder in your repository. Drag the file “standards.csv” into the “csv” folder. It should replace the existing “standards.csv” file.
 
 7.  Describe your change and create a new branch for this commit and start a pull request. ([**What is a pull request?**](https://help.github.com/articles/about-pull-requests/))
 
